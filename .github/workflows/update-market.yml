@@ -8,6 +8,8 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 concurrency:
   group: update-market-data
@@ -32,4 +34,12 @@ jobs:
           git add data/market.json
           git diff --cached --quiet || git commit -m "chore: update market data"
           git push
-
+      # Commits made with GITHUB_TOKEN do not trigger another workflow.
+      # Deploy here so a successful market refresh is visible on Pages immediately.
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - name: Publish refreshed market data
+        id: deployment
+        uses: actions/deploy-pages@v4

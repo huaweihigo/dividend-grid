@@ -138,6 +138,28 @@ def build_market(stocks: list[dict[str, Any]], previous: dict[str, Any], use_net
     }
 
 
+def market_has_effective_change(previous: dict[str, Any], current: dict[str, Any]) -> bool:
+    """Ignore scrape-time metadata; unchanged market values should not create a commit."""
+    def signature(market: dict[str, Any]) -> dict[str, Any]:
+        stocks = {
+            code: {
+                "price": quote.get("price"),
+                "as_of": quote.get("as_of"),
+                "source": quote.get("source"),
+                "name": quote.get("name"),
+            }
+            for code, quote in (market.get("stocks") or {}).items()
+        }
+        return {
+            "status": market.get("status"),
+            "as_of": market.get("as_of"),
+            "source": market.get("source"),
+            "message": market.get("message"),
+            "stocks": stocks,
+        }
+    return signature(previous) != signature(current)
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="更新 dividend-grid 的市场行情")
     parser.add_argument("--dry-run", action="store_true", help="联网抓取但不写入 data/market.json")
@@ -149,8 +171,10 @@ def main() -> int:
         return 2
     market = build_market(stocks, previous)
     print(f"{market['status']}: {market['message']}")
-    if not args.dry_run:
+    if not args.dry_run and market_has_effective_change(previous, market):
         MARKET_PATH.write_text(json.dumps(market, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    elif not args.dry_run:
+        print("No effective market-data change; market.json was left untouched.")
     # A failed update is logged but not made fatal: preserving yesterday's valid file is intentional.
     return 0
 

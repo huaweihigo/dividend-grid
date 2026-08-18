@@ -5,7 +5,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 
 from market_utils import dividend_yield_percent, generate_yield_grid, price_for_yield, preserve_valid_market, valid_positive_number
-from update_market import build_market
+from update_market import build_market, market_has_effective_change
 
 
 class CalculationTests(unittest.TestCase):
@@ -45,6 +45,15 @@ class CalculationTests(unittest.TestCase):
         market = build_market([stock], previous, use_network=False)
         self.assertIn(market["status"], {"failed", "unavailable"})
         self.assertEqual(market["stocks"]["600036.SH"]["price"], 38.2)
+
+    def test_unchanged_quote_does_not_need_a_new_commit(self):
+        market = {
+            "status": "normal", "as_of": "2026-08-18", "updated_at": "old", "source": "东方财富",
+            "message": "全部关注股票行情已更新。",
+            "stocks": {"600036.SH": {"name": "招商银行", "price": 38.2, "as_of": "2026-08-18", "source": "东方财富"}},
+        }
+        newer_check = {**market, "updated_at": "new", "attempted_at": "new"}
+        self.assertFalse(market_has_effective_change(market, newer_check))
 
 
 if __name__ == "__main__":
