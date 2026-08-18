@@ -6,6 +6,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 
 from market_utils import dividend_yield_percent, generate_yield_grid, price_for_yield, preserve_valid_market, valid_positive_number
 from update_market import build_market, market_has_effective_change
+from update_dividends import annual_cash_dividends
 
 
 class CalculationTests(unittest.TestCase):
@@ -54,6 +55,14 @@ class CalculationTests(unittest.TestCase):
         }
         newer_check = {**market, "updated_at": "new", "attempted_at": "new"}
         self.assertFalse(market_has_effective_change(market, newer_check))
+
+    def test_implemented_dividends_are_converted_from_per_ten_shares(self):
+        class Frame:
+            def iterrows(self):
+                yield 0, {"方案进度": "实施分配", "报告期": "2025-06-30", "现金分红-现金分红比例": 3.0}
+                yield 1, {"方案进度": "实施分配", "报告期": "2025-12-31", "现金分红-现金分红比例": 12.0}
+                yield 2, {"方案进度": "董事会预案", "报告期": "2025-12-31", "现金分红-现金分红比例": 20.0}
+        self.assertEqual(annual_cash_dividends(Frame()), {"2025": 1.5})
 
 
 if __name__ == "__main__":

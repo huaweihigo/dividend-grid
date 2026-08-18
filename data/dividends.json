@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "status": "unavailable",
+  "updated_at": null,
+  "source": "AKShare / 东方财富",
+  "message": "尚未成功自动获取分红；当前使用 stocks.json 中的人工分红兜底值。",
+  "stocks": {}
+}
