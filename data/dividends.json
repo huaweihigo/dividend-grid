@@ -1,8 +1,118 @@
 {
   "schema_version": 1,
-  "status": "unavailable",
-  "updated_at": null,
+  "status": "normal",
+  "updated_at": "2026-08-18T13:53:28+08:00",
   "source": "AKShare / 东方财富",
-  "message": "尚未成功自动获取分红；当前使用 stocks.json 中的人工分红兜底值。",
-  "stocks": {}
+  "message": "自动更新 18/18 只股票的已实施分红；失败项保留旧值。",
+  "stocks": {
+    "600036.SH": {
+      "annual_dividend": 2.016,
+      "year": "2025",
+      "source": "AKShare / 东方财富",
+      "updated_at": "2026-08-18T13:53:01+08:00"
+    },
+    "601318.SH": {
+      "annual_dividend": 2.7,
+      "year": "2025",
+      "source": "AKShare / 东方财富",
+      "updated_at": "2026-08-18T13:53:03+08:00"
+    },
+    "600941.SH": {
+      "annual_dividend": 4.7037,
+      "year": "2025",
+      "source": "AKShare / 东方财富",
+      "updated_at": "2026-08-18T13:53:04+08:00"
+    },
+    "000333.SZ": {
+      "annual_dividend": 4.3,
+      "year": "2025",
+      "source": "AKShare / 东方财富",
+      "updated_at": "2026-08-18T13:53:06+08:00"
+    },
+    "601985.SH": {
+      "annual_dividend": 0.18,
+      "year": "2025",
+      "source": "AKShare / 东方财富",
+      "updated_at": "2026-08-18T13:53:07+08:00"
+    },
+    "003816.SZ": {
+      "annual_dividend": 0.086,
+      "year": "2025",
+      "source": "AKShare / 东方财富",
+      "updated_at": "2026-08-18T13:53:08+08:00"
+    },
+    "600795.SH": {
+      "annual_dividend": 0.241,
+      "year": "2025",
+      "source": "AKShare / 东方财富",
+      "updated_at": "2026-08-18T13:53:09+08:00"
+    },
+    "600900.SH": {
+      "annual_dividend": 1.0,
+      "year": "2025",
+      "source": "AKShare / 东方财富",
+      "updated_at": "2026-08-18T13:53:10+08:00"
+    },
+    "000538.SZ": {
+      "annual_dividend": 1.583,
+      "year": "2025",
+      "source": "AKShare / 东方财富",
+      "updated_at": "2026-08-18T13:53:12+08:00"
+    },
+    "000423.SZ": {
+      "annual_dividend": 2.7056,
+      "year": "2025",
+      "source": "AKShare / 东方财富",
+      "updated_at": "2026-08-18T13:53:14+08:00"
+    },
+    "601919.SH": {
+      "annual_dividend": 1.0,
+      "year": "2025",
+      "source": "AKShare / 东方财富",
+      "updated_at": "2026-08-18T13:53:16+08:00"
+    },
+    "601066.SH": {
+      "annual_dividend": 0.34,
+      "year": "2025",
+      "source": "AKShare / 东方财富",
+      "updated_at": "2026-08-18T13:53:18+08:00"
+    },
+    "600030.SH": {
+      "annual_dividend": 0.7,
+      "year": "2025",
+      "source": "AKShare / 东方财富",
+      "updated_at": "2026-08-18T13:53:19+08:00"
+    },
+    "600011.SH": {
+      "annual_dividend": 0.4,
+      "year": "2025",
+      "source": "AKShare / 东方财富",
+      "updated_at": "2026-08-18T13:53:21+08:00"
+    },
+    "600887.SH": {
+      "annual_dividend": 1.38,
+      "year": "2025",
+      "source": "AKShare / 东方财富",
+      "updated_at": "2026-08-18T13:53:23+08:00"
+    },
+    "601857.SH": {
+      "annual_dividend": 0.47,
+      "year": "2025",
+      "source": "AKShare / 东方财富",
+      "updated_at": "2026-08-18T13:53:25+08:00"
+    },
+    "600177.SH": {
+      "annual_dividend": 0.44,
+      "year": "2025",
+      "source": "AKShare / 东方财富",
+      "updated_at": "2026-08-18T13:53:27+08:00"
+    },
+    "000807.SZ": {
+      "annual_dividend": 0.699,
+      "year": "2025",
+      "source": "AKShare / 东方财富",
+      "updated_at": "2026-08-18T13:53:28+08:00"
+    }
+  },
+  "failures": []
 }
