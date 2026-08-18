@@ -1,11 +1,10 @@
 {
   "schema_version": 1,
-  "status": "failed",
+  "status": "normal",
   "as_of": "2026-08-18",
   "updated_at": "2026-08-18T11:17:46+08:00",
-  "attempted_at": "2026-08-18T11:19:33+08:00",
   "source": "东方财富公开行情",
-  "message": "本次行情更新失败，已保留上次有效行情；请稍后在 Actions 中重试。",
+  "message": "全部关注股票行情已更新。",
   "stocks": {
     "600036.SH": {
       "code": "600036",
