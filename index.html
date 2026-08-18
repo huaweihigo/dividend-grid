@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="A 股收息股票的股息率价格网格与观察器" />
+    <title>股息率网格 · A股收息观察器</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header class="hero">
+        <div>
+          <p class="eyebrow">DIVIDEND GRID · A-SHARE</p>
+          <h1>股息率网格 <span>· A股收息观察器</span></h1>
+          <p id="market-meta" class="market-meta">正在读取行情数据…</p>
+        </div>
+        <div id="market-status" class="data-status" aria-live="polite"></div>
+      </header>
+
+      <section class="summary" aria-label="观察概览">
+        <article><span>股票数量</span><strong id="total-count">–</strong></article>
+        <article><span>进入击球区</span><strong id="in-zone-count">–</strong></article>
+        <article><span>接近击球区</span><strong id="near-zone-count">–</strong></article>
+        <article><span>平均股息率</span><strong id="average-yield">–</strong></article>
+      </section>
+
+      <section class="controls" aria-label="筛选和排序">
+        <label class="search"><span class="sr-only">搜索股票</span><input id="search" type="search" placeholder="搜索名称、代码或分类" autocomplete="off" /></label>
+        <label><span>分类</span><select id="category-filter"><option value="">全部分类</option></select></label>
+        <label><span>排序</span><select id="sort"><option value="status">按关注状态</option><option value="yield-desc">股息率从高到低</option><option value="distance">距离击球区最近</option><option value="name">名称</option></select></label>
+      </section>
+
+      <p class="manual-note">分红金额为人工维护数据，请在公司分红变化后及时更新，并以公司公告为准。</p>
+      <section id="stock-list" class="stock-list" aria-live="polite"></section>
+    </main>
+
+    <dialog id="detail-modal" aria-labelledby="detail-title">
+      <button id="close-modal" class="close" aria-label="关闭详情">×</button>
+      <div id="detail-content"></div>
+    </dialog>
+
+    <footer>本工具仅用于个人股票估值与股息率数据整理，不构成任何投资建议。分红数据可能由用户人工维护，请以公司公告为准。</footer>
+    <script src="./app.js"></script>
+  </body>
+</html>
+
