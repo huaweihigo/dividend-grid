@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "status": "normal",
+  "status": "failed",
   "as_of": "2026-08-26",
   "updated_at": "2026-08-26T11:33:27+08:00",
-  "attempted_at": "2026-08-26T11:33:27+08:00",
+  "attempted_at": "2026-08-26T12:21:33+08:00",
   "source": "东方财富公开行情",
-  "message": "全部关注股票行情已更新。",
+  "message": "本次行情更新失败，已保留上次有效行情；请稍后在 Actions 中重试。",
   "stocks": {
     "600036.SH": {
       "code": "600036",
@@ -153,6 +153,24 @@
     }
   },
   "failures": [
-    "AKShare: ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+    "AKShare: ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))",
+    "东方财富: 600036.SH 无有效价格",
+    "东方财富: 601318.SH 无有效价格",
+    "东方财富: 600941.SH 无有效价格",
+    "东方财富: 000333.SZ 无有效价格",
+    "东方财富: 601985.SH 无有效价格",
+    "东方财富: 003816.SZ 无有效价格",
+    "东方财富: 600795.SH 无有效价格",
+    "东方财富: 600900.SH 无有效价格",
+    "东方财富: 000538.SZ 无有效价格",
+    "东方财富: 000423.SZ 无有效价格",
+    "东方财富: 601919.SH 无有效价格",
+    "东方财富: 601066.SH 无有效价格",
+    "东方财富: 600030.SH 无有效价格",
+    "东方财富: 600011.SH 无有效价格",
+    "东方财富: 600887.SH 无有效价格",
+    "东方财富: 601857.SH 无有效价格",
+    "东方财富: 600177.SH 无有效价格",
+    "东方财富: 000807.SZ 无有效价格"
   ]
 }
