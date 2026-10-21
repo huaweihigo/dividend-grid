@@ -2,155 +2,157 @@
   "schema_version": 1,
   "status": "normal",
   "as_of": "2026-10-21",
-  "updated_at": "2026-10-21T13:47:05+08:00",
-  "attempted_at": "2026-10-21T13:47:05+08:00",
-  "source": "AKShare / 东方财富",
+  "updated_at": "2026-10-21T18:38:05+08:00",
+  "attempted_at": "2026-10-21T18:38:05+08:00",
+  "source": "东方财富公开行情",
   "message": "全部关注股票行情已更新。",
   "stocks": {
     "600036.SH": {
       "code": "600036",
       "name": "招商银行",
-      "price": 42.17,
+      "price": 42.28,
       "as_of": "2026-10-21",
-      "updated_at": "2026-10-21T13:47:05+08:00",
-      "source": "AKShare / 东方财富"
+      "updated_at": "2026-10-21T18:37:31+08:00",
+      "source": "东方财富公开行情"
     },
     "601318.SH": {
       "code": "601318",
       "name": "中国平安",
-      "price": 51.08,
+      "price": 51.2,
       "as_of": "2026-10-21",
-      "updated_at": "2026-10-21T13:47:05+08:00",
-      "source": "AKShare / 东方财富"
+      "updated_at": "2026-10-21T18:37:33+08:00",
+      "source": "东方财富公开行情"
     },
     "600941.SH": {
       "code": "600941",
       "name": "中国移动",
-      "price": 97.51,
+      "price": 96.59,
       "as_of": "2026-10-21",
-      "updated_at": "2026-10-21T13:47:05+08:00",
-      "source": "AKShare / 东方财富"
+      "updated_at": "2026-10-21T18:37:35+08:00",
+      "source": "东方财富公开行情"
     },
     "000333.SZ": {
       "code": "000333",
       "name": "美的集团",
-      "price": 84.28,
+      "price": 83.86,
       "as_of": "2026-10-21",
-      "updated_at": "2026-10-21T13:47:05+08:00",
-      "source": "AKShare / 东方财富"
+      "updated_at": "2026-10-21T18:37:37+08:00",
+      "source": "东方财富公开行情"
     },
     "601985.SH": {
       "code": "601985",
       "name": "中国核电",
       "price": 9.48,
       "as_of": "2026-10-21",
-      "updated_at": "2026-10-21T13:47:05+08:00",
-      "source": "AKShare / 东方财富"
+      "updated_at": "2026-10-21T18:37:39+08:00",
+      "source": "东方财富公开行情"
     },
     "003816.SZ": {
       "code": "003816",
       "name": "中国广核",
       "price": 4.55,
       "as_of": "2026-10-21",
-      "updated_at": "2026-10-21T13:47:05+08:00",
-      "source": "AKShare / 东方财富"
+      "updated_at": "2026-10-21T18:37:41+08:00",
+      "source": "东方财富公开行情"
     },
     "600795.SH": {
       "code": "600795",
       "name": "国电电力",
-      "price": 5.17,
+      "price": 5.14,
       "as_of": "2026-10-21",
-      "updated_at": "2026-10-21T13:47:05+08:00",
-      "source": "AKShare / 东方财富"
+      "updated_at": "2026-10-21T18:37:43+08:00",
+      "source": "东方财富公开行情"
     },
     "600900.SH": {
       "code": "600900",
       "name": "长江电力",
-      "price": 29.52,
+      "price": 29.57,
       "as_of": "2026-10-21",
-      "updated_at": "2026-10-21T13:47:05+08:00",
-      "source": "AKShare / 东方财富"
+      "updated_at": "2026-10-21T18:37:45+08:00",
+      "source": "东方财富公开行情"
     },
     "000538.SZ": {
       "code": "000538",
       "name": "云南白药",
-      "price": 52.92,
+      "price": 52.8,
       "as_of": "2026-10-21",
-      "updated_at": "2026-10-21T13:47:05+08:00",
-      "source": "AKShare / 东方财富"
+      "updated_at": "2026-10-21T18:37:47+08:00",
+      "source": "东方财富公开行情"
     },
     "000423.SZ": {
       "code": "000423",
       "name": "东阿阿胶",
-      "price": 47.44,
+      "price": 47.21,
       "as_of": "2026-10-21",
-      "updated_at": "2026-10-21T13:47:05+08:00",
-      "source": "AKShare / 东方财富"
+      "updated_at": "2026-10-21T18:37:49+08:00",
+      "source": "东方财富公开行情"
     },
     "601919.SH": {
       "code": "601919",
       "name": "中远海控",
-      "price": 16.61,
+      "price": 16.63,
       "as_of": "2026-10-21",
-      "updated_at": "2026-10-21T13:47:05+08:00",
-      "source": "AKShare / 东方财富"
+      "updated_at": "2026-10-21T18:37:51+08:00",
+      "source": "东方财富公开行情"
     },
     "601066.SH": {
       "code": "601066",
       "name": "中信建投",
-      "price": 22.66,
+      "price": 22.65,
       "as_of": "2026-10-21",
-      "updated_at": "2026-10-21T13:47:05+08:00",
-      "source": "AKShare / 东方财富"
+      "updated_at": "2026-10-21T18:37:53+08:00",
+      "source": "东方财富公开行情"
     },
     "600030.SH": {
       "code": "600030",
       "name": "中信证券",
-      "price": 25.11,
+      "price": 25.01,
       "as_of": "2026-10-21",
-      "updated_at": "2026-10-21T13:47:05+08:00",
-      "source": "AKShare / 东方财富"
+      "updated_at": "2026-10-21T18:37:55+08:00",
+      "source": "东方财富公开行情"
     },
     "600011.SH": {
       "code": "600011",
       "name": "华能国际",
-      "price": 7.49,
+      "price": 7.5,
       "as_of": "2026-10-21",
-      "updated_at": "2026-10-21T13:47:05+08:00",
-      "source": "AKShare / 东方财富"
+      "updated_at": "2026-10-21T18:37:57+08:00",
+      "source": "东方财富公开行情"
     },
     "600887.SH": {
       "code": "600887",
       "name": "伊利股份",
-      "price": 27.55,
+      "price": 27.6,
       "as_of": "2026-10-21",
-      "updated_at": "2026-10-21T13:47:05+08:00",
-      "source": "AKShare / 东方财富"
+      "updated_at": "2026-10-21T18:37:59+08:00",
+      "source": "东方财富公开行情"
     },
     "601857.SH": {
       "code": "601857",
       "name": "中国石油",
       "price": 12.56,
       "as_of": "2026-10-21",
-      "updated_at": "2026-10-21T13:47:05+08:00",
-      "source": "AKShare / 东方财富"
+      "updated_at": "2026-10-21T18:38:01+08:00",
+      "source": "东方财富公开行情"
     },
     "600177.SH": {
       "code": "600177",
       "name": "雅戈尔",
-      "price": 8.27,
+      "price": 8.28,
       "as_of": "2026-10-21",
-      "updated_at": "2026-10-21T13:47:05+08:00",
-      "source": "AKShare / 东方财富"
+      "updated_at": "2026-10-21T18:38:03+08:00",
+      "source": "东方财富公开行情"
     },
     "000807.SZ": {
       "code": "000807",
       "name": "云铝股份",
-      "price": 25.11,
+      "price": 24.93,
       "as_of": "2026-10-21",
-      "updated_at": "2026-10-21T13:47:05+08:00",
-      "source": "AKShare / 东方财富"
+      "updated_at": "2026-10-21T18:38:05+08:00",
+      "source": "东方财富公开行情"
     }
   },
-  "failures": []
+  "failures": [
+    "AKShare: ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+  ]
 }
